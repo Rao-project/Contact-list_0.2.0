@@ -11,9 +11,9 @@
 
     <title>contact_list</title>
     <link rel="stylesheet" href="css/style.css">
+   
 </head>
 <body>
-    
     <header>
             <div class="row">
                 <div class="col-4">
@@ -32,8 +32,14 @@
             <div class="col-md-3" id="column">
                 <br>
                 <div class="card-12">
-                   <center><img src="image/16.png" id="img"> create contact </center>
-                </div>
+                    <button onclick="myFunction()" class="dropbtn">Create A New Contact</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="pro.html">Create a new contact</a>
+                      <a href="#">Fav-List</a>
+                      
+                    </div>
+                  </div>
+          
                 <br>
                  <div class="card-1">
                 <img src="image/3.png" alt="">&nbsp;Contact
@@ -63,49 +69,57 @@
             </div>
             <!-- contact list -->
             <div class="col-md-9" id="column_1">
-                     <h2>Name and Contact</h2>
-                    <img src="image/25.png" id="img5"> 
-                    <img src="image/print_FILL0_wght400_GRAD0_opsz48.png" id="img5"> 
-                    <img src="image/upload_FILL0_wght400_GRAD0_opsz48.png" id="img5"> 
-                        
+                     <h2>Name and Contact</h2>                      
                 <hr>
                 <div class="card-2">
-                <img src="image/25.png" id="img_5" ><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
-                    
+                <img src="image/25.png" id="img_5" ><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>   
             </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
                 </div>
-                
                 <div class="card-2">
              <img src="image/25.png" id="img_5"><img src="image/15.png" id="img5"><img src="image/21.png" id="img_5"><p>jainish<br>9313794668</p>
-                </div> 
-
+                </div>
             </div>
           </div>
         </div>
     </div>
 </main>
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 </body>
 </html>
