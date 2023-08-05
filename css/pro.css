@@ -18,9 +18,16 @@ padding: 20px;
     padding:10px;
 }
 #inp01{
-    margin-left:10px;
+   
     width: 90%;
     padding:4px;
+    border:1px solid black;
+    border-radius:5px;
+    float: right;
+}
+#inp001{
+    width: 90%;
+    padding-bottom:40px;
     border:1px solid black;
     border-radius:5px;
     float: right;
@@ -87,7 +94,7 @@ label:hover{background-color: rgb(216, 216, 216);}
     margin-left: 90%;
 }
 #column_1{
-    margin-top:50px ;
+    margin-top:40px ;
 }
 .card-12{
     position:relative;
