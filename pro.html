@@ -78,7 +78,9 @@
                         <h2>My Header</h2>
                                                             
                     <div class="pro">
-                        &nbsp;&nbsp;<img src="image/17.png" id="img002"><label for="img002"> <img src="image/16.png"
+                        &nbsp;&nbsp;<img src="image/17.png" id="img002" onclick="upload_image()">
+                        <div class="wraper" >  <input type="file" id='input_file'accept="image/*" onchange="previewImage(event);"></div>
+                        <label for="img002"> <img src="image/16.png"
                                 id="img001">&nbsp;Label</label>
                         <div class="save"><button id="btn">save</button></div>
                     </div>
@@ -139,6 +141,27 @@
             header.classList.remove("sticky");
           }
         }
+<<<<<<< HEAD
         </script>
    </body>
+=======
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+<script src="Javascript/pro.js"></script>
+</body>
+
+>>>>>>> 31c71efe29738c90064ce86b10ce58a465828700
 </html>

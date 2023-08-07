@@ -144,4 +144,6 @@ label:hover{background-color: rgb(216, 216, 216);}
 
 .show {display: block;}
 
-
+.wraper{
+    display: none;
+}

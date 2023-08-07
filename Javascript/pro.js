@@ -6,6 +6,7 @@ document.getElementsByClassName("contact")[0].addEventListener('click', function
 function save(){
     var first_name = document.getElementById("F_name").value;
 }
+<<<<<<< HEAD
      /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
@@ -27,3 +28,39 @@ function save(){
         }
 
 
+=======
+function upload_image() {
+    document.getElementById('input_file').click();
+}
+const previewImage = (event) => {
+    /**
+     * Get the selected files.
+     */
+    const imageFiles = event.target.files;
+    /**
+     * Count the number of files selected.
+     */
+    const imageFilesLength = imageFiles.length;
+    /**
+     * If at least one image is selected, then proceed to display the preview.
+     */
+    if (imageFilesLength > 0) {
+        /**
+         * Get the image path.
+         */
+        const imageSrc = URL.createObjectURL(imageFiles[0]);
+        /**
+         * Select the image preview element.
+         */
+        const imagePreviewElement = document.querySelector("#img002");
+        /**
+         * Assign the path to the image preview element.
+         */
+        imagePreviewElement.src = imageSrc;
+        /**
+         * Show the element by changing the display value to "block".
+         */
+       
+    }
+};
+>>>>>>> 31c71efe29738c90064ce86b10ce58a465828700
