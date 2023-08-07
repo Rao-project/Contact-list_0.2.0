@@ -73,7 +73,9 @@
                 <div class="col-md-9" id="column_1">
 
                     <div class="pro">
-                        &nbsp;&nbsp;<img src="image/17.png" id="img002"><label for="img002"> <img src="image/16.png"
+                        &nbsp;&nbsp;<img src="image/17.png" id="img002" onclick="upload_image()">
+                        <div class="wraper" >  <input type="file" id='input_file'accept="image/*" onchange="previewImage(event);"></div>
+                        <label for="img002"> <img src="image/16.png"
                                 id="img001">&nbsp;Label</label>
                         <div class="save"><button id="btn">save</button></div>
                     </div>
@@ -143,7 +145,7 @@
             }
         }
     </script>
-
+<script src="Javascript/pro.js"></script>
 </body>
 
 </html>
