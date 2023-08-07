@@ -14,17 +14,18 @@
   
 </head>
 <body>
-    <header>
+    <header><div class="container">
             <div class="row">
-                <div class="col-4">
-       <a href="index.html"><img src="image/user.png" id="img1" alt="icon"></a>
-        <img src="image/list.png" id="img2" alt="icon"> 
-        </div>
+              <div class="col-4">
+                <img src="image/list.png" id="img2" alt="icon">
+                  <a href="index.html"><img src="image/user.png" id="img1" alt="icon"></a><h3>__Conatct</h3>
+             </div>
         <div class="col-6" > 
       <input type="text" alt="search" id="inp" placeholder="search">
         </div>
-        <div class="col"><img src="" alt=""></div>
-        <div class="col">setting</div>
+        <div class="col"><center><img src="image/17.png" width="30px"></center></div>
+        <div class="col"><center><img src="image/19.png" width="30px"></center></div>
+      </div>
     </header>
     <main>
         <div class="container">
@@ -32,7 +33,7 @@
             <div class="col-md-3" id="column">
                 <br>
                 <div class="card-12">
-                    <button onclick="myFunction()"class="dropbtn">Create A New Contact</button>
+                    <button onclick="myFunction()"class="dropbtn"><img src="image/16.png">&nbsp;Create A New Contact</button>
                     <div id="myDropdown" class="dropdown-content">
                       <a href="pro.html">Create a new contact</a>
                       <a href="fav.html">Fav-List</a>
@@ -100,25 +101,7 @@
     </div>
 </main>
 <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
+  
     </script>
     <script src="Javascript/index.js"></script>
 </body>

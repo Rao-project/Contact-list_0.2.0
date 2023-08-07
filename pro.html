@@ -16,26 +16,29 @@
 
 <body>
     <header>
+        <div class="container">
         <div class="row">
             <div class="col-4">
-                <a href="index.html"><img src="image/user.png" id="img1" alt="icon"></a>
-                <img src="image/list.png" id="img2" alt="icon">
+               <img src="image/list.png" id="img2" alt="icon">
+                 <a href="index.html"><img src="image/user.png" id="img1" alt="icon"></a><h3>__Conatct</h3>
             </div>
             <div class="col-6">
                 <input type="text" alt="search" id="inp" placeholder="search">
             </div>
-            <div class="col"><img src="" alt=""></div>
-            <div class="col">setting</div>
-    </header>
+            <div class="col"><center><img src="image/17.png" width="30px"></center></div>
+            <div class="col"><center><img src="image/19.png" width="30px"></center></div>
+    </div>
+</div>
+        </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-md-3" id="column">
                     <br>
                     <div class="card-12">
-                        <button onclick="myFunction()" class="dropbtn">Create A New Contact</button>
+                        <button onclick="myFunction()" class="dropbtn"><img src="image/16.png" width="20px">&nbsp;Create A New Contact</button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="pro.html">Create a new contact</a>
+                            <!-- <a href="pro.html">Create a new contact</a> -->
                             <a href="fav.html">Fav-List</a>
                         </div>
                     </div>
@@ -71,13 +74,15 @@
                 </div>
                 <!-- jainish -->
                 <div class="col-md-9" id="column_1">
-
+                              <div class="header" id="myHeader">
+                        <h2>My Header</h2>
+                                                            
                     <div class="pro">
                         &nbsp;&nbsp;<img src="image/17.png" id="img002"><label for="img002"> <img src="image/16.png"
                                 id="img001">&nbsp;Label</label>
                         <div class="save"><button id="btn">save</button></div>
                     </div>
-                    <hr>
+                    <hr> </div>
                     <div class="row">
                         <div class="col-md-8" id="column">
                             <div class="card-3">
@@ -118,32 +123,22 @@
                                 <img src="image/note_FILL0_wght400_GRAD0_opsz48.png" id="img003"><input type="text"
                                     id="inp001" placeholder="Note">
                             </div>
-                        </div>
                     </div>
-                </div>
+                </div> </div>
     </main>
-    <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
+    <script src="Javascript/pro.js"> 
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
         function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
         }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
-</body>
-
+        </script>
+   </body>
 </html>
