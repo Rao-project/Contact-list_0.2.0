@@ -3,8 +3,7 @@ function save(){
     var first_name =  document.querySelector(".inp012").value;
     console.log(first_name);
 }
-     /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
+     /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
         }
