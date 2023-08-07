@@ -124,7 +124,13 @@ padding: 15px;
 
 .show {display: block;}
 
+.navegation{
+    border-radius: 10px;
 
+}
+  .navigationB{
+    border:none;
+  }
   
 
 
