@@ -3,8 +3,6 @@ function save(){
     var first_name =  document.querySelector(".inp012").value;
     console.log(first_name);
 }
-<<<<<<< Updated upstream
-<<<<<<< HEAD
      /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function myFunction() {
@@ -24,12 +22,6 @@ function save(){
                 }
             }
         }
-
-
-=======
-=======
-//upload image section
->>>>>>> Stashed changes
 function upload_image() {
     document.getElementById('input_file').click();
 }
@@ -64,4 +56,4 @@ const previewImage = (event) => {
        
     }
 };
->>>>>>> 31c71efe29738c90064ce86b10ce58a465828700
+
