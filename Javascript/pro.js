@@ -1,11 +1,9 @@
-document.getElementsByClassName("contact")[0].addEventListener('click', function (event) 
-{
-    window.location.href="index.html";
-    console.log("clicked");
-}); 
+ 
 function save(){
-    var first_name = document.getElementById("F_name").value;
+    var first_name =  document.querySelector(".inp012").value;
+    console.log(first_name);
 }
+<<<<<<< Updated upstream
 <<<<<<< HEAD
      /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
@@ -29,6 +27,9 @@ function save(){
 
 
 =======
+=======
+//upload image section
+>>>>>>> Stashed changes
 function upload_image() {
     document.getElementById('input_file').click();
 }

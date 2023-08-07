@@ -1,4 +1,5 @@
 const sqlite3 = require("sqlite3").verbose();
+const pro= require('./Javascript/pro.js')
 let sql;
 
 // connect to database
@@ -7,6 +8,7 @@ const db = new sqlite3.Database("./data.db", sqlite3.OPEN_READWRITE, (err) =>{
     console.log("Connected to database");
 });
 
+console.log(pro.first_name);
 // Create table
 
 // sql = 'CREATE TABLE contact(id INTEGER PRIMARY KEY,first_name,last_name,phone_number_1,label_1,phone_number_2,lable_2,email,birthdate DATE,note,image,is_favorite)';

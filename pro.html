@@ -82,14 +82,13 @@
                         <div class="wraper" >  <input type="file" id='input_file'accept="image/*" onchange="previewImage(event);"></div>
                         <label for="img002"> <img src="image/16.png"
                                 id="img001">&nbsp;Label</label>
-                        <div class="save"><button id="btn">save</button></div>
+                        <div class="save"><button id="btn" onclick="save();">save</button></div>
                     </div>
                     <hr> </div>
                     <div class="row">
                         <div class="col-md-8" id="column">
                             <div class="card-3">
-                                <img src="image/3.png" id="img003"><input type="text" id="inp01"
-                                    placeholder="Frist name " required>
+                                <img src="image/3.png" id="img003"><input type="text" id="inp01" class="inp012" placeholder="Frist name " required>
                             </div>
                             <div class="card-3">
                                 <img src="image/9.png" id="img003"><input type="text" id="inp01" placeholder="Surname"
@@ -159,8 +158,10 @@
                 }
             }
         }
+        
     </script>
 <script src="Javascript/pro.js"></script>
+
 </body>
 
 >>>>>>> 31c71efe29738c90064ce86b10ce58a465828700
