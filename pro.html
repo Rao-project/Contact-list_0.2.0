@@ -78,7 +78,7 @@
                         <h2>My Header</h2>
                                                             
                     <div class="pro">
-                        &nbsp;&nbsp;<img src="image/17.png" id="img002" onclick="upload_image()">
+                        &nbsp;&nbsp;<img src="image/17.png" id="img002" class="image" onclick="upload_image()">
                         <div class="wraper" >  <input type="file" id='input_file'accept="image/*" onchange="previewImage(event);"></div>
                         <label for="img002"> <img src="image/16.png"
                                 id="img001">&nbsp;Label</label>
@@ -88,41 +88,41 @@
                     <div class="row">
                         <div class="col-md-8" id="column">
                             <div class="card-3">
-                                <img src="image/3.png" id="img003"><input type="text" id="inp01" class="inp012" placeholder="Frist name " required>
+                                <img src="image/3.png" id="img003"><input type="text" id="inp01" class="first_name" placeholder="Frist name " required>
                             </div>
                             <div class="card-3">
-                                <img src="image/9.png" id="img003"><input type="text" id="inp01" placeholder="Surname"
+                                <img src="image/9.png" id="img003"><input type="text" id="inp01" class="last_name" placeholder="Surname"
                                     required>
                             </div>                      
                             <div class="card-3">
-                                <img src="image/11.png" id="img003"><input type="text" id="inp01" placeholder="Lable">
+                                <img src="image/11.png" id="img003"><input type="text" id="inp01" class="label_1" placeholder="Lable">
                             </div>
                             <div class="card-3">
                                 <img src="image/10.png" id="img003"> <input required type="text" pattern="[0-9]{10}"
-                                    id="inp01" ondrop="return false;" onpaste="return false;"
+                                    id="inp01"  class="phone_number_1" ondrop="return false;" onpaste="return false;"
                                     onkeypress='return event.charCode>=48 && event.charCode<=57' name="phone"
                                     placeholder="Phone number" maxlength="10" required>
                             </div>
                             <div class="card-3">
-                                <img src="image/11.png" id="img003"><input type="text" id="inp01" placeholder="Lable">
+                                <img src="image/11.png" id="img003"><input type="text" id="inp01" class="label_2" placeholder="Lable">
                             </div>
                             <div class="card-3">
                                 <img src="image/10.png" id="img003"> <input required type="text" pattern="[0-9]{10}"
-                                    id="inp01" ondrop="return false;" onpaste="return false;"
+                                    id="inp01" class="phone_number_2" ondrop="return false;" onpaste="return false;"
                                     onkeypress='return event.charCode>=48 && event.charCode<=57' name="phone"
                                     placeholder="Phone number" maxlength="10">
                             </div>
                             <div class="card-3">
                                 <img src="image/mail_FILL0_wght400_GRAD0_opsz48.png" id="img003"><input type="email"
-                                    id="inp01" placeholder="Email">
+                                    id="inp01" class="email" placeholder="Email">
                             </div>
                             <div class="card-3">
                                 <img src="image/cake_FILL0_wght400_GRAD0_opsz48.png" id="img003"><input type="date"
-                                    id="inp01" placeholder="date">
+                                    id="inp01" class="birthdate" placeholder="date">
                             </div>
                             <div class="card-3">
                                 <img src="image/note_FILL0_wght400_GRAD0_opsz48.png" id="img003"><input type="text"
-                                    id="inp001" placeholder="Note">
+                                    id="inp001" class="note" placeholder="Note">
                             </div>
                     </div>
                 </div> </div>

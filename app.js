@@ -1,5 +1,5 @@
 const sqlite3 = require("sqlite3").verbose();
-const pro= require('./Javascript/pro.js')
+// const pro= require('./Javascript/pro.js')
 let sql;
 
 // connect to database
@@ -8,10 +8,9 @@ const db = new sqlite3.Database("./data.db", sqlite3.OPEN_READWRITE, (err) =>{
     console.log("Connected to database");
 });
 
-console.log(pro.first_name);
 // Create table
 
-// sql = 'CREATE TABLE contact(id INTEGER PRIMARY KEY,first_name,last_name,phone_number_1,label_1,phone_number_2,lable_2,email,birthdate DATE,note,image,is_favorite)';
+// sql = 'CREATE TABLE contact(id INTEGER PRIMARY KEY,first_name,last_name,label_1,phone_number_1,lable_2,phone_number_2,email,birthdate DATE,note,image,is_favorite)';
 // db.run(sql , (err) =>{
 //     if(err)err.message;
 //     console.log("Table created successfully");
@@ -20,7 +19,7 @@ console.log(pro.first_name);
 
 // Insert query
 
-// sql = 'INSERT INTO contact(first_name,last_name,phone_number_1,label_1,phone_number_2,lable_2,email,birthdate,note,image,is_favorite) VALUES ("Sarvaiya","Divyesh",6352239294,"work",9898899520,"home","test2003@gmail.com","02-Dec-2003","Hello india","Image:url",0)';
+// sql = 'INSERT INTO contact(first_name,last_name,label_1,phone_number_1,label_2,phone_number_2,email,birthdate,note,image,is_favorite) VALUES ("Sarvaiya","Divyesh","work",6352239294,"home",9898899520,"test2003@gmail.com","02-Dec-2003","Hello india","Image:url",0)';
 // db.run(sql , (err , data) =>{
 //     if(err) {
 // 		return console.log(err.message); 
