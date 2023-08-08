@@ -9,13 +9,18 @@ document.getElementsByClassName("edit")[0].addEventListener('click', function (e
     window.location.href="pro.html";
     console.log("clicked");
 }); 
-  /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
+document.getElementsByClassName("fav_list")[0].addEventListener('click', function (event) 
+{
+    window.location.href="fav.html";
+    console.log("clicked");
+
+}); 
+  
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
       }
       
-      // Close the dropdown if the user clicks outside of it
+     
       window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
           var dropdowns = document.getElementsByClassName("dropdown-content");
