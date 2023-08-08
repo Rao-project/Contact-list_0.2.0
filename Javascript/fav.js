@@ -8,15 +8,6 @@ document.getElementsByClassName("edit")[0].addEventListener('click', function (e
     window.location.href="pro.html";
     console.log("clicked");
 }); 
-document.getElementsByClassName("fav_list")[0].addEventListener('click', function (event) 
-{
-    window.location.href="index.html";
-    console.log("clicked");
-}); 
-function save(){
-    var first_name = document.getElementById("F_name").value;
-}
-
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -32,5 +23,13 @@ window.onclick = function (event) {
                 openDropdown.classList.remove('show');
             }
         }
+    }
+}
+function menu(){
+    var hide = document.getElementById("column");
+    if (hide.style.display === "none"){
+        hide.style.display = "block";
+    }else{
+        hide.style.display = "none";
     }
 }
