@@ -65,16 +65,13 @@ padding: 15px;
     margin-left:10px ;
 }
 
-#header_icon{
-    margin-top:25px;
-    float:left;
-}
+
 #btn_d{
-  padding: 1px;
+  padding:1px;
 }
 .card-12{
   width:200px;
-  height: 70px;
+  height:50px;
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9); */
     transition: 0.5s;
     border: 1px solid rgb(211, 202, 202);
