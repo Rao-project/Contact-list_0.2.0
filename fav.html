@@ -13,23 +13,25 @@
     <link rel="stylesheet" href="css/fav.css">
 </head>
 <body>
-    <header>       
-        <div class="row">
-          <div class="col-sm-4">
-            <img src="image/menu_FILL0_wght400_GRAD0_opsz48.png" id="img2" alt="icon" onclick="menu()">
-              <a href="index.html"><img src="image/user (1).png" id="img1" alt="icon"></a><hp>&nbsp;Contcat</p>
-         </div>
-    <div class="col-sm-6" > 
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="Search">
-    </div>
-   </header>
+    <header>  
+        <div class="container">     
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="image/menu_FILL0_wght400_GRAD0_opsz48.png" id="img2" alt="icon" onclick="menu()" >
+                    <a href="index.html"><img src="image/user (1).png" id="img1" alt="icon"></a><hp>&nbsp;Contact</p>
+               </div>
+          <div class="col-sm-5" > 
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="Search" width="50px">
+          </div>
+        </div>
+         </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col-md-3" id="column">
                     <br>
                     <div class="card-12">
-                        <button onclick="myFunction()" class="dropbtn"><img src="image/16.png" alt="">&nbsp;Create A New Contact</button>
+                        <button onclick="myFunction()"class="dropbtn" id="btn_d"><img src="image/16.png">&nbsp;Create A New Contact</button>
                         <div id="myDropdown" class="dropdown-content">
                             <a href="pro.html">Create a new contact</a>
                         </div>
