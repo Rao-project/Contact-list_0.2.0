@@ -75,20 +75,20 @@
                               <div class="header" id="myHeader">
                                                                                   
                     <div class="pro">
-                        &nbsp;&nbsp;<img src="image/17.png" id="img002" class="image" onclick="upload_image()">
+                        &nbsp;&nbsp;<img src="image/17.png" id="img002" class="user_image" onclick="upload_image()">
                         <div class="wraper" >  <input type="file" id='input_file'accept="image/*" onchange="previewImage(event);"></div>
                         <label for="img002"> <img src="image/16.png" id="img001">&nbsp;<input type="text" placeholder="Lable" id="lable_01"></label>
-                        <div class="save"><button type="submit" id="btn" onclick="save()">save</button></div>
+                        <div class="save"><button type="submit" id="btn" onclick="save()" class="upload">save</button></div>
                     </div>
                     <hr>
                  </div>
                     <div class="row">
                         <div class="col-md-8" id="column">
                             <div class="card-3">
-                                <img src="image/3.png" id="img003"><input type="text" id="inp01" class="first_name" placeholder="Frist name " required>
+                                <img src="image/3.png" id="img003"><input type="text" id="inp01" class="first_name" placeholder="First name " required>
                             </div>
                             <div class="card-3">
-                                <img src="image/9.png" id="img003"><input type="text" id="inp01" class="last_name" placeholder="Surname"
+                                <img src="image/9.png" id="img003"><input type="text" id="inp01" class="last_name" placeholder="Last name"
                                     required>
                             </div>                      
                             <div class="card-3">
@@ -139,81 +139,10 @@
             header.classList.remove("sticky");
           }
         }
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-        function menu(){
-    var hide = document.getElementById("column");
-    if (hide.style.display === "none"){
-        hide.style.display = "block";
-    }else{
-        hide.style.display = "none";
-    }
-}   
-/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-function upload_image() {
-    document.getElementById('input_file').click();
-}
-const previewImage = (event) => {
-    /**
-     * Get the selected files.
-     */
-    const imageFiles = event.target.files;
-    /**
-     * Count the number of files selected.
-     */
-    const imageFilesLength = imageFiles.length;
-    /**
-     * If at least one image is selected, then proceed to display the preview.
-     */
-    if (imageFilesLength > 0) {
-        /**
-         * Get the image path.
-         */
-        const imageSrc = URL.createObjectURL(imageFiles[0]);
-         
-        /**
-         * Select the image preview element.
-         */
-        const imagePreviewElement = document.querySelector("#img002");
-        /**
-         * Assign the path to the image preview element.
-         */
-        imagePreviewElement.src = imageSrc;
-        /**
-         * Show the element by changing the display value to "block".
-         */
        
-    }
-};
     </script>
+
+ 
 </body>
 
 </html>
