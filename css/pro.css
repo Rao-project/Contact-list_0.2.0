@@ -103,16 +103,16 @@ label:hover{background-color: rgb(216, 216, 216);}
     margin-top:40px ;
 }
 #btn_d{
-    padding:5px;
+    padding:1px;
   }
   .card-12{
     width:200px;
-    height: 60px;
-      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9); */
+    height:50px;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
       transition: 0.5s;
       border: 1px solid rgb(211, 202, 202);
       border-radius: 10px;
-    }
+  }
       .card-12:hover{
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
