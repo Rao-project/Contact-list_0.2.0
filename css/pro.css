@@ -1,7 +1,5 @@
 body {
-    font-family: 'Inter', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0px;
-    padding: 0PX;
+    font-family: "Google Sans",Roboto,Arial,sans-serif; 
 }
 header{
 background-color: rgb(250, 250, 250);
@@ -72,6 +70,7 @@ padding: 15px;
     width: 20px;
 }
 #img002{
+    position:sticky;
     width:150px;
     height: 160px;
     border-radius: 50%;
@@ -84,10 +83,11 @@ label
     margin-left: 40px;
 }
 label:hover{background-color: rgb(216, 216, 216);}
-#btn{
-    padding: 10px;
+#btn{ 
+    background-color: #d3ebf1;
+    padding:10px;
     border: none;
-    border-radius: 10px;
+    border-radius:20px;
     margin-left: 90%;
 }
 #column_1{
