@@ -9,7 +9,7 @@ padding: 15px;
 
 }
 #img1,#img2{
-    margin-left:30px;
+    margin-left:10px;
     float: left;
     width: 30px;
 }
@@ -36,16 +36,6 @@ img{
     border-radius:5px;
     float: right;
 }
-.col-sm-3{
-    size: 100%;
-    background-color:rgb(255, 255, 255) ;
-}
-.card-12{
-    align-content: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-} 
 .card-1{
   padding: 10px;
   border-radius:50px;
@@ -86,8 +76,9 @@ img{
     height: 160px;
     border-radius: 50%;
 }
-label{
-    border:2px solid rgb(211, 211, 211) ;
+label 
+{
+    border:2px solid rgb(226, 226, 226) ;
     border-radius: 10px;
     padding: 5px;
     margin-left: 40px;
@@ -106,15 +97,17 @@ label:hover{background-color: rgb(216, 216, 216);}
     padding:1px;
   }
   .card-12{
-    width:200px;
-    height:50px;
-       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
-      transition: 0.5s;
-      border: 1px solid rgb(211, 202, 202);
-      border-radius: 10px;
+     width:200px;
+     height:50px;
+     align-content: center;
+     padding: 10px;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+     transition: 0.5s;
+     border: 1px solid rgb(211, 202, 202);
+     border-radius: 10px;
   }
-      .card-12:hover{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+ .card-12:hover{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 .dropbtn {
   width:100%;

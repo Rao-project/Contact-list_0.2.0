@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Call Example</title>
+</head>
+<body>
+
+<!-- Input field for the phone number -->
+<input type="text" id="phoneNumber" placeholder="Enter phone number">
+<button id="callButton">Call</button>
+
+<script>
+    const phoneNumberInput = document.getElementById("phoneNumber");
+    const callButton = document.getElementById("callButton");
+
+    callButton.addEventListener("click", function() {
+        const phoneNumber = phoneNumberInput.value;
+        
+        if (phoneNumber.trim() !== "") {
+            // Create a 'tel:' link
+            window.location.href = `tel:${encodeURIComponent(phoneNumber)}`;
+        } else {
+            alert("Please enter a valid phone number.");
+        }
+    });
+</script>
+
+</body>
+</html>
+    
