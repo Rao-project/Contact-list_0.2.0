@@ -21,15 +21,9 @@ padding: 15px;
     size: 100%;
     background-color:rgb(255, 255, 255) ;
 }
-.card-12{
-    align-content: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 10px;
-} 
 .card-1{
   padding: 10px;
-  border-radius:50px;
+  border-radius:0px 20px 20px 0px ;
   cursor: pointer;
 }
 .card-1:hover{
@@ -45,11 +39,10 @@ padding: 15px;
       opacity:0.5;
       background-color: rgb(247, 247, 247);
   }
-  p{
-    margin-left:50px ;
-  }
-  img{
+  #icon_im{
     width:20px;
+}  #main_im{
+  width:30px;
 }
 #img5{
     padding-top:5px;
@@ -73,6 +66,7 @@ padding: 15px;
 }
 #btn_d{
   padding:1px;
+
 }
 .card-12{
   width:200px;
@@ -80,14 +74,14 @@ padding: 15px;
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
     transition: 0.5s;
     border: 1px solid rgb(211, 202, 202);
-    border-radius: 10px;
+    border-radius: 60px;
+    padding: 10px;
 }
 .card-12:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dropbtn {
-  
   width:100%;
   background-color: #ffffff;
   color: rgb(0, 0, 0);

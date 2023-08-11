@@ -18,7 +18,10 @@ padding: 15px;
     width: 100%;
     padding:10px;
 }
-img{
+#main_im{
+    width: 30px;
+}
+#icon_im{
     width: 20px;
 }
 #inp01{
@@ -38,7 +41,8 @@ img{
 }
 .card-1{
   padding: 10px;
-  border-radius:50px;
+  border-radius:0px 20px 20px 0px ;
+  cursor: pointer;
 }
 .card-1:hover{
     opacity: 1;
@@ -61,12 +65,8 @@ img{
       opacity:0.5;
       background-color: rgb(255, 255, 255);
   }
-#img001{
-    width:20px;
-}
-#img003{
-    width:25px;
-}
+
+
 #img01{
     float: right;
     width: 20px;
@@ -104,7 +104,7 @@ label:hover{background-color: rgb(216, 216, 216);}
      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
      transition: 0.5s;
      border: 1px solid rgb(211, 202, 202);
-     border-radius: 10px;
+     border-radius: 60px;
   }
  .card-12:hover{
    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);

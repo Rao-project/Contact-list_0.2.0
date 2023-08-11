@@ -33,7 +33,7 @@ padding: 15px;
 
 .card-1{
   padding: 10px;
-  border-radius:50px;
+  border-radius:0px 20px 20px 0px ;
   cursor: pointer;
 }
 .card-1:hover{
@@ -48,9 +48,6 @@ padding: 15px;
   .card-2:hover{
       opacity:0.5;
       background-color: rgb(247, 247, 247);
-  }
-  p{
-    margin-left:50px ;
   }
 
 .edit{
@@ -103,13 +100,12 @@ padding: 15px;
   position: relative;
   display: inline-block;
 }
-
 .dropdown-content {
   width:200px;
   display: none;
   border-radius:10px;
   position: absolute;
-  background-color: #ffffff;
+  background-color:#f3f3f3;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
