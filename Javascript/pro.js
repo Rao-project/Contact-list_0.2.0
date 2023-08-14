@@ -90,7 +90,6 @@ function image_uploaded()
 
         imageBase64Stringsep = base64String;
         imagebase64 = base64String;
-        console.log("Base 64 string",imagebase64);
         // alert(imageBase64Stringsep);
         
     }
@@ -113,7 +112,7 @@ function image_uploaded()
 // }
 document.addEventListener("DOMContentLoaded", () => {
     let db;
-    const request = indexedDB.open("myDB", 1);
+    const request = indexedDB.open("myDatabase", 2);
 
     request.onerror = event => {
         console.error("Database error:", event.target.error);
@@ -121,12 +120,17 @@ document.addEventListener("DOMContentLoaded", () => {
     request.onupgradeneeded = event => {
         db = event.target.result;
         const objectStore = db.createObjectStore("contact", { keyPath: "id", autoIncrement: true });
-        objectStore.createIndex("first_name", "first_name", { unique: false },"last_name", "last_name", { unique: false }
-        ,"label_1", "label_1", { unique: false },"phone_number_1", "phone_number_1", { unique: false }    
-        ,"label_2", "label_2", { unique: false },"phone_number_2", "phone_number_2", { unique: false }    
-        ,"email", "email", { unique: false },"birthdate", "birthdate", { unique: false }    
-        ,"note", "note", { unique: false },"user_image", "user_image", { unique: false },
-        "favourite","favourite",{ unique: false });
+        objectStore.createIndex("first_name", "first_name", { unique: false });
+        objectStore.createIndex( "last_name", "last_name", { unique: false });
+        objectStore.createIndex( "label_1", "label_1", { unique: false });
+        objectStore.createIndex( "phone_number_1", "phone_number_1", { unique: true });
+        objectStore.createIndex( "label_2", "label_2", { unique: false });
+        objectStore.createIndex( "phone_number_2", "phone_number_2", { unique: true });
+        objectStore.createIndex( "email", "email", { unique: false });
+        objectStore.createIndex( "birthdate", "birthdate", { unique: false });
+        objectStore.createIndex( "note", "note", { unique: false });
+        objectStore.createIndex( "user_image", "user_image", { unique: false });
+        objectStore.createIndex( "favourite","favourite",{ unique: false });
     };
     
     request.onsuccess = event => {
