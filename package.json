@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "nodemon": "^3.0.1",
-    "sqlite3": "^5.1.6"
-  },
-  "scripts":{
-    "start": "nodemon index.js"
-  }
-}
