@@ -90,26 +90,13 @@ function image_uploaded()
 
         imageBase64Stringsep = base64String;
         imagebase64 = base64String;
+        localStorage.setItem("image").value(imagebase64);
         // alert(imageBase64Stringsep);
         
     }
     reader.readAsDataURL(file);
 }
 
-
-// function save(){
-//     const first_name =  document.querySelector(".first_name").value;
-//     const last_name =  document.querySelector(".last_name").value;
-//     const label_1 =  document.querySelector(".label_1").value;
-//     const phone_number_1 =  document.querySelector(".phone_number_1").value;
-//     const label_2 =  document.querySelector(".label_2").value;
-//     const email =  document.querySelector(".email").value;
-//     const birthdate =  document.querySelector(".birthdate").value;
-//     const note =  document.querySelector(".note").value;
-//     const user_image = imagebase64;
-//     console.log(first_name,last_name,label_1,phone_number_1,label_2,email,birthdate,note,user_image);
-
-// }
 document.addEventListener("DOMContentLoaded", () => {
     let db;
     const request = indexedDB.open("myDatabase", 2);
